@@ -1,8 +1,8 @@
-
+// json2html.js
 
 export default function json2html(data) {
-    // Extract all unique keys to use as headers
-    const headers = [...new Set(data.flatMap(obj => Object.keys(obj)))];
+    // Define the required headers
+    const headers = ["Name", "Age", "Gender"];
 
     // Begin constructing the HTML table as a string
     let html = `<table data-user="hindumuppala@gmail.com">\n  <thead>\n    <tr>`;
